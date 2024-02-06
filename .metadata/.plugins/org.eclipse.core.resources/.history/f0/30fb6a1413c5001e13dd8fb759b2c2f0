@@ -1,0 +1,5 @@
+package br.com.tiagosilva.certification.modules.students.controllers;
+
+public class StudentController {
+
+}

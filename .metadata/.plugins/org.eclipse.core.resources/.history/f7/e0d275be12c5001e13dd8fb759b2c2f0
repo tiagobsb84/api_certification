@@ -1,0 +1,19 @@
+package br.com.tiagosilva.certification.modules.students.dto;
+
+import java.util.List;
+import java.util.UUID;
+
+import br.com.tiagosilva.certification.modules.students.entity.AnswersCertificationsEntity;
+import br.com.tiagosilva.certification.modules.students.entity.CertificationStudentEntity;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class VerifyHasCertificationDTO {
+
+	private String email;
+	private String technology;
+}

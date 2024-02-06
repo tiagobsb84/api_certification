@@ -1,0 +1,20 @@
+package br.com.tiagosilva.certification.modules.students.controllers;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.com.tiagosilva.certification.modules.students.dto.VerifyHasCertificationDTO;
+
+@RestController
+@RequestMapping("/students")
+public class StudentController {
+
+	@GetMapping("/")
+	public String verifyIfHasCertification(@RequestBody VerifyHasCertificationDTO verifyHasCertifiationDTO) {
+		
+		System.out.println(verifyHasCertifiationDTO);
+		return "Usuário pode fazer a prova";
+	}
+}
